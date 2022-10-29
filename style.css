@@ -1,0 +1,120 @@
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+.container {min-height: 100vh;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 100%;
+background-color: hsl(217, 54%, 11%);}
+
+.bgcard {background-color: hsl(216, 50%, 16%);
+margin-top: 100px;
+border-radius: 20px;
+padding: 20px;
+max-width: 100%;}
+
+
+.imgtop {position: relative;}
+
+.imgtop img {width: 412px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+border-radius: 10px;
+max-width: 100%;}
+
+.imgoverlay {position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: hsl(178, 100%, 50%, 40%);
+border-radius: 10px;
+display: none;}
+
+.imgoverlay img{position: absolute;
+width: 50px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);}
+
+.text img {width: 10px;}
+
+.textup h2 {margin-left: 30px;
+margin-top: 20px;
+color: white;
+font-family: 'Lobster', cursive;
+font-family: 'Outfit', sans-serif;
+font-size: 1.2rem;
+max-width: 100%;
+cursor: pointer;}
+
+.textup p {color: hsl(215, 51%, 70%);
+margin-left: 30px;
+margin-top: 15px;
+font-size: 1rem;
+font-family: 'Outfit';
+width: 70%;}
+
+.data {display: flex;
+justify-content: space-between;
+margin: 30px;
+margin-top: 0px;}
+
+.left {display: flex;
+color: hsl(178, 100%, 50%);
+font-family: 'Outfit';
+margin-top: 30px;
+}
+.right {display: flex;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit';
+    margin-top: 30px;}
+
+.left img, .right img {margin-right: 10px;
+}
+
+.right .clock {width: 15px;}
+
+.bot {max-width: 100%;
+    display: flex;
+margin-top: 0px;
+margin-left: 30px;
+align-items: center;
+}
+
+.bot img {width: 30px;
+border: 1px solid white;
+border-radius: 50px;
+margin: 0;}
+
+.bot p {margin-left: 20px;
+    color: hsl(215, 51%, 70%)}
+
+.bot p span {color: white;
+margin-left: 4px;
+cursor: pointer;}
+
+hr {color: hsl(215, 51%, 70%);
+width: 90%;
+margin: auto;
+margin-top: -10px;
+margin-bottom: 20px;
+border-style: inset;
+}
+
+h2:hover , .bot span:hover {color: hsl(178, 100%, 50%);
+transition: 0.7s;}
+
+.imgtop:hover .imgoverlay{display: block;
+cursor: pointer;
+transition: 1s;}
+
+@media screen and (max-width: 292px) {
+    .data {flex-wrap: wrap;
+    justify-content: center;}
+}
